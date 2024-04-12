@@ -1,0 +1,103 @@
+Feature: Plasara comanda pe Amazon
+
+Scenario1.1: Verificare pagina de pornire(positive)
+
+Given: Utilizatorul acceseaza pagina principala 
+
+ 
+When:Utilizatorul se afla pe pagina principala.
+Then: Pagina ar trebui să se încarce fără erori.
+
+ 
+
+Scenario1.2: Verificare pagina de pornire(negative)
+
+Given: Utilizatorul acceseaza pagina principala 
+
+ 
+When: Utilizatorul introduce un URL invalid.
+Then: Utilizatorul ar trebui sa vadă un mesaj de eroare care indică faptul că pagina nu a putut fi găsită.
+
+ 
+
+Scenario2.1: Verificarea cautarii unui produs(positive)
+
+Given: Utilizatorul se afla pe pagina principala 
+
+ 
+When: Utilizatorul introduce “Xbox Series X“ in bara de cautare.
+And: Utilizatorul da click pe butonul de search
+Then: Utilizatorul ar trebui sa vadă produsele afisate relevante cu ce a intrudos in cautare.
+
+ 
+
+Scenario2.2: Verificarea cautarii unui produs(negative)
+
+Given: Utilizatorul se afla pe pagina principala 
+
+ 
+When: Utilizatorul introduce “Xbox Series X“ in bara de cautare.
+And: Utilizatorul da click pe butonul de search
+Then: Utilizatorul ar trebui sa vadă alte produse afisate care nu sunt relevante cu ce a intrudos in cautare.
+
+ 
+
+Scenario3.1: Verificare adaugarii unui produs in cos (positive)
+
+Given: Utilizatorul se afla pe pagina principala 
+
+ 
+When: Utilizatorul introduce “Xbox Series X“ in bara de cautare.
+And: Utilizatorul da click pe butonul de search
+Then:Utilizatorul ar trebui sa vadă produsele afisate relevante cu ce a intrudos in cautare.
+And: Utilizatorul alege produsul dorit
+Then: Utilizatorul ar trebui sa vada produsul adaugat in cos
+
+ 
+
+Scenario3.2: Verificare adaugarii unui produs in cos (negative)
+
+Given: Utilizatorul se afla pe pagina principala 
+
+ 
+When: Utilizatorul introduce “sjahbdasdsa“ in bara de cautare.
+And: Utilizatorul da click pe butonul de search
+Then: Utilizatorul nu ar trebui sa vadă produse afisate.
+And: Utilizatorul nu ar trebui sa poata selecta un produs dorit.
+Then: Utilizatorul nu ar trebui sa vada produsul adaugat in cos.
+
+ 
+
+Scenario4.1: Verificarea cosului de cumparaturi (positive)
+
+Given: Utilizatorul logat are adaugate produse in cosul de cumparaturi.
+When: Utilizatorul navigheaza către pagina de coș.
+Then: Utilizatorul ar trebui sa vada produsele adaugate in cosul de cumparaturi.
+And: Utilizatorul ar trebui sa vada pretul total si cantitatea cumparaturilor.
+And: Utilizatorul ar trebui sa vada informatia despre livrare.
+
+Scenario4.1: Verificarea cosului de cumparaturi (negative)
+
+Given: Utilizatorul logat nu are adaugate produse in cosul de cumparaturi.
+When: Utilizatorul navigheaza către pagina de coș.de cumparaturi.
+Then: Utilizatorul nu ar trebui sa vada produsele adaugate in cosul de cumparaturi.
+And: Utilizatorul nu ar trebui sa vada pretul total si cantitatea cumparaturilor.
+And: Utilizatorul nu ar trebui sa vada informatia despre livrare.
+
+ 
+
+Scenario5.1: Verificarea procesului de plata (positive)
+
+Given:  Utilizatorul logat are adaugate produse in cosul de cumparaturi.
+When: Utilizatorul accesează pagina de checkout.
+And:  Completează toate informațiile necesare pentru livrare și plată,
+And: Apasă pe butonul "Plasează comanda".
+Then: Utilizatorul primește un mesaj de confirmare a comenzii.
+
+Scenario5.1: Verificarea procesului de plata (negative)
+
+Given:  Utilizatorul logat are adaugate produse in cosul de cumparaturi.
+When: Utilizatorul accesează pagina de checkout.
+And: Completează toate informațiile necesare pentru livrare și plată.
+And: Utilizatorul primește un mesaj de eroare.
+Then: Comanda nu este înregistrată în sistem.
