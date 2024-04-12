@@ -1,31 +1,3 @@
-Scenario1: Utilizatorul este capabil sa sa plaseze o receinzie valida 
-
-Given: Utilizatorul logat se afla pe pagina unui produs
-
-And: Utlizatorul se afla in sectiunea “Recenzi”
-
-When: Utilizatorul tapeaza textul “Bravo”
-
-And: Utilizatorul selecteaza oricare din stelute
-
-And: Utilizatorul sa click pe butonul “Lasa o recenzie”
-
-Then: Utilizatorul ar trebui sa primeasca urmatorul mesaj de succes “Comentariul tau a fost plasat cu succes” 
-
-Scenario2: Utilizatorul logat nu este capabil sa sa plaseze o receinzie valida 
-
-Given: Utilizatorul logat se afla pe pagina unui produs
-
-And: Utlizatorul se afla in sectiunea “Recenzi”
-
-When: Utilizatorul tapeaza textul “ ”
-
-And: Utilizatorul selecteaza oricare din stelute
-
-And: Utilizatorul sa click pe butonul “Lasa o recenzie”
-
-Then: Utilizatorul ar trebui sa primeasca urmatorul mesaj de eroare “Please lengthen this text to 4 characters or more”
--------------------------------------
 Feature: Smoke test Amazon
 
 Scenario1: Teste pozitive
