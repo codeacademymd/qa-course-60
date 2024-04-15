@@ -1,0 +1,59 @@
+Description
+
+Feature: Smoke test  
+
+Scenario1: Utilizatorul logat si cu adresa de livrare “Germania” pe “Apple 2023 MacBook Pro laptop M2 Max chip with 12‑core CPU and 30‑core GPU: 14.2-inch Liquid Retina XDR display, 32GB Unified Memory, 1TB SSD storage. Works with iPhone/iPad; Silver  “
+
+Given: Utilizatorul adauga produsul in cosul de cumparaturi
+When: Utilizatorul da click pe “Add to Basket “
+Then: Utilizatorul trebuie sa fie redirectionat in “Basket” 
+
+Given: Utilizatorul acceseaza recenziile
+When: Utilizatorul da click pe stelute
+And: Utilizatorul da click pe “See customer reviews >”
+Then: Utilizatorul ar trebui sa fie redirectionat la recenzii
+
+Given: Utilizatorul poate schimba valuta
+When: Utilizatorul da click pe flagul “UK”
+And: Utilizatorul da click pe “£ - GBP - British Pound (Default)”
+And: Utilizatorul da click pe “€ - EUR - Euro”
+And: Utilizatorul da click pe “Save changes”
+Then: Utilizatorul ar trebui sa fie redirectionat catre pagina pe care era
+
+Given: Utilizatorul poate accesa imaginile produsului
+When: Utilizatorul da click pe imagine
+Then: Utilizatorului ar trebui sa i se afiseze imaginea extinsa
+
+Given: Utilizatorul poate schimba culoarea produsului
+When: Utilizatorul localizeaza caracteristica “Color name”
+And: Utilizatorul da click pe “Space gray”
+Then: Utilizatorului ar trebui sa i se schimbe culoarea produsului
+
+ 
+
+Scenario2: Utilizatorul se fla pe pagina “Apple 2023 MacBook Pro laptop M2 Max chip with 12‑core CPU and 30‑core GPU: 14.2-inch Liquid Retina XDR display, 32GB Unified Memory, 1TB SSD storage. Works with iPhone/iPad; Silver  “
+
+Given: Utilizatorul ne logat nu poate adauga produsul in cosul de cumparaturi
+When: Utilizatorul da click pe “Add to Basket”
+Then: Utilizatorul ar trebui sa fie redirectionat catre pagina ”Logare”
+
+Given:Utilizatorul logat din Moldova nu poate adauga produsul in cosul de cumparaturi
+When: Utilizatorul da click pe “Add to Basket”
+Then: Utilizatorul ar trebui sa fie redirectionat catre pagina ”Change Deliver Address ”
+
+Given: Utilizatorul nu poate selecta culoarea “Space Gray” cu “30-core GPU”
+When: Utilizatorul da click pe “Space Gray”
+And: Utilizatorul da click pe “30-core GPU”
+Then: Utilizatorului ar trebui automat sa i se schimbe culoarea in “Silver”
+
+Given: Utilizatorul nu se poate inregistra cu mail invalid
+When: Utilizatorul da click pe “Hello, sing in”
+And: Utilizatorul introduce "Email or phone number" invalid
+And: Utilizatorul da click pe butonul "Continue"
+And: Utilizatorul rezolva “puzzle” 
+And: Utilizatorul da click pe butonul "Continue"
+Then:Utilizatorul ar trebui sa primeasca urmatorul mesaj “There was a problem”
+
+Given: Utilizatorul ne logat nu poate schimba adresa de livrare
+When: Utilizatorul da click pe “Deliver to”
+Then: Utilizatorului ar trebui sa ii apare o ferestra “Sing in to see your address”

@@ -1,0 +1,24 @@
+Feature: Smoke test 
+
+Scenario:Utilizatorul ne-logat se afla pe pagina principala: "https://www.utest.com/"
+
+Given: Utilizatorul poate sas isi creeze un cont
+When: Utilizatorul da click "Become a uTester"
+Then: Utilizatorul ar trebui sa fie redirectionat catre pagina "singup"
+
+Given: Utilizatorul ne-logat poate sa acceseze pagina "Projects"
+When: Utilizatorul da click pe "Projects"
+Then: Utilizatorul ar trebui sa fie redirectionat catre pagina "Projects"
+
+Given: Utilizatorul ne-logat poate sa acceseze pagina "About Us"
+When: Utilizatorul da click pe "About Us"
+Then: Utilizatorul ar trebui sa fie redirectionat catre pagina "About Us"
+
+Given:Utilizatorul ne-logat poate sa acceseze pagina "Why uTest"
+When: Utilizatorul da click pe "Why uTest"
+Then: Utilizatorul ar trebui sa fie redirectionat catre pagina "Why uTest"
+
+
+Given:Utilizatorul ne-logat poate sa acceseze pagina "Log In"
+When: Utilizatorul da click pe "Log In"
+Then: Utilizatorul ar trebui sa fie redirectionat catre pagina "Log In"
