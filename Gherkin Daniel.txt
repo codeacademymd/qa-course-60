@@ -1,0 +1,47 @@
+Feature: Smoke test
+
+Scenario: Positive testing
+Given: A Log out user accessed Apple 2023 MacBook Pro laptop M2 Max chip with 12‑core CPU and 30‑core GPU: 14.2-inch Liquid Retina XDR display, 32GB Unified Memory, 1TB SSD storage. Works with iPhone/iPad; Silver 
+When: User clicks on ‘'Add to List’'
+Then: User is redirected to the ‘'Sign in’' screen
+
+
+When: User clicks on ‘'Deliver to (current location)''
+Then: User is asked to choose a location or to sign in to see available addresses
+
+
+When: User scrolls down the page
+Then: User is able to scroll down
+
+
+When: User clicks on ‘'amazon.co.uk’' logo
+Then: User is able to be redirected on main page
+
+
+When:  User sees first half of the specifications beginning with ‘'Brand’'
+And: User clicks on ‘'See more''
+Then: User successfully clicks on ‘‘See more’'
+And: User is able to see full specifications
+
+Scenario: Negative testing
+Given: A Log out user accessed  Apple 2023 MacBook Pro laptop M2 Max chip with 12‑core CPU and 30‑core GPU: 14.2-inch Liquid Retina XDR display, 32GB Unified Memory, 1TB SSD storage. Works with iPhone/iPad; Silver 
+When: User clicks: Add to List''
+And: User is redirected to the ‘'Sign in’' screen
+And: User types in a wrong email
+Then: User is not able to be redirected further
+And: User should receive this message ‘'There was a problem’' sign above ‘'Sign in”
+
+When: User clicks on ‘’Write a customer review”
+Then: User will not be able to write a customer review
+And: User is redirected to the ‘’Sign in’’ page
+
+When: User adds in the URL after amazon.co.uk/ the text ‘'GA@#@:12409s’'
+Then: User is not able to be redirected to an existed page
+And: User is able to see ‘'SORRY we couldn't find that page’'
+
+When: User adds in the URL after https://www.amazon.co.uk/Apple-MacBook-laptop-12 the text ‘'1231193’'
+Then: User will not be able to break the website 
+
+When: User clicks on ‘'Report an issue with this product’'
+Then: User will not be able to report a issue
+And: User should receive this message ‘'To submit a report log in to your account'' pop up
