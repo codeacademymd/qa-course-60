@@ -1,0 +1,37 @@
+Feature: Crucial feature testing
+
+Scenario1: User is able to log in successfully
+Given: User is located on main page 
+And: User clicks ‘'Sign in”
+When: User types in his registered valid email
+And: User types in his registered valid password 
+Then: User is able to log in
+Scenario2: User is able to register successfully 
+Given: User is located on main page
+And: User clicks ‘'Join Today’'
+When: User completes Step1 with valid information
+And: User completes Step2 adding his address
+And: User completes Step3 adding his device
+And: User completes Step4 with a valid password
+Then: User is able to register successfully
+And: User is able to receive a confirmation email
+Given: User is located on main page
+And: User clicks ‘'Become a uTester’'
+When: User completes Step1 with valid information
+And: User completes Step2 adding his address
+And: User completes Step3 adding his device
+And: User completes Step4 with a valid password
+Then: User is able to register successfully
+And: User is able to receive a confirmation email
+Scenario3: User is unable to log in with incorrect credentials
+Given: User is located on main page
+And: User clicks on “Sign in”
+When: User types in an unregistered valid email
+And: User types in the password “Koala”
+Then: User will be unable to log in
+And: User will be able to see a text above email address “Invalid username or password”
+When: User clicks on “Forgot password?”
+And: User types in an unregistered valid email
+Then: User will be thrown back to the ''Sign in'' screen
+And: User will be unable to log in
+And: User will be able to see the text “If you have an account under that email, you should receive an email shortly with further instructions.
