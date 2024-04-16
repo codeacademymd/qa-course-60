@@ -1,0 +1,39 @@
+Feature: Verificare pagina(positive) 
+
+Given:Utilizatorul acceseaza pagina principala.www.utest.com
+When:Utilizatorul se afla pe pagina principala.
+Then:Pagina ar trebuie sa se incarce fara erori.
+
+
+Feature: Verificare pagina (negative)
+
+Given: Utilizatorul acceseaza pagina principala www.utest.com
+When:Utilizatorul introduce un URL invalid.
+Then:Utilizatorul ar trebuie sa vada un mesaj precum ca pagina nu a fost gasita.
+
+
+Feature: Autentificare utilizator(negativ)
+
+Given: Utilizatorul se afla pe pagina principala
+And: Utilizatorul da click pe butonul "Log-in"
+And: Utilizatorul este redirectionat pe pagina de autentificare.
+When: Introduce adresa de email "shumacher900@yahoo.com" si Parola "45698"
+And: Da click pe butonul "Sign-In"
+Then: Utilizatorul nu ar trebui sa fie redirectionat pe contul sau valid.
+And: Utilizatorul ar trebui sa primeasca un mesaj de eroare "Invalid username or password"
+
+Feature: Crearea unui proiect(positive)
+
+Given: Utilizatorul logat da click la sectiunea "Projects"
+And: Alege un project
+When: Da click pe projectul ales
+And: Da click pe butonul " Apply"
+Then: Este redirictionat pe o alta pagina
+
+Feature: Autentificare utilizator(positive)
+Given: Utilizatorul se afla pe pagina principala
+And: Da click pe butonul "Log-in"
+And: Este redirectionat pe pagina de logare
+When: Introduce emailu "mangeaiulian1989@gmail.com" si parola valida
+And: Da click pe butonul "Sign-in"
+Then: Este riderectionat pe contul sau valid
