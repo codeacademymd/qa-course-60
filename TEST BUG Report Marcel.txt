@@ -1,0 +1,34 @@
+1.Test desgn techniques - sunt tehnicile de creare a testelor de catre QA pentru verificarea unui produs ca de exemplu:
+ - valorile pe care urmeaza sa le utilizezi sau care sa le ignori si sa nu le utilizezi;
+ - functionalitatile pe care urmeaza sa le testezi sau sa le ignori si sa nu testezi;
+
+2.Error Guessing - este tehnica cu care analizezi produsul rezultand din experienta la QA pentru a cauta bug-uri potentiale.
+QA rezultand din experienta sa testeaza funcionalitatile unde a intalnit multe bug-uri.
+Exploratory Testing - este tehnica care consta in analiza produsului ,explorarea si cunoasterea produsului rezultand la experienta la QA.
+QA analizeaza produsul explorandui toate functionalitatile care dupa experienta sa au puncte mai slabe.
+
+
+3.Boundary Values - pentru testare sunt luate doar valorile extreme din fiecare interval.
+Equivalence partitioning - pentru testare se ia doar o valoare din fiecare interval.
+0,1,2,3,4      5,6,7,8      9,10,11,12       
+Boundary=0,4  5,8  9,12 
+Equivalence= 2   6   11
+
+4.Decision Table - pentru testare sunt analizate diverse combinatii de valori si conditii.
+Cand se face reducera la produs
+Weekend , Abonat, Black Friday ,etc.
+
+5.Pastrarea specificatiilor pe platformele online este importanta deoarece colegii pot vedea specificatiile dupa care QA a efectuat testarea si sa nu apara intrebari catre QA
+legate de bug-uri care nu lea gasit QA-ul.
+
+6.Test documentation - sunt toate documentele intr-o companie cu privire la modul de efectuare si organizare  a testarii de catre specialistii QA.
+
+7.Avantajele Test Checklist
+- Usurinta in creare
+- Economisirea de timp
+
+8.Este
+
+9.Este
+
+10.Selenium IDE este foarte  de folos in cazul in care ai de executat acelas test de multe ori si cu valori diferite .El va efectua testele rapid si cu eficienta maxima.
