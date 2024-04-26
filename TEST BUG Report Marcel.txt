@@ -1,34 +1,32 @@
-1.Test desgn techniques - sunt tehnicile de creare a testelor de catre QA pentru verificarea unui produs ca de exemplu:
- - valorile pe care urmeaza sa le utilizezi sau care sa le ignori si sa nu le utilizezi;
- - functionalitatile pe care urmeaza sa le testezi sau sa le ignori si sa nu testezi;
+Descriere : Butonul "Become a uTester" nu este click-abil 
 
-2.Error Guessing - este tehnica cu care analizezi produsul rezultand din experienta la QA pentru a cauta bug-uri potentiale.
-QA rezultand din experienta sa testeaza funcionalitatile unde a intalnit multe bug-uri.
-Exploratory Testing - este tehnica care consta in analiza produsului ,explorarea si cunoasterea produsului rezultand la experienta la QA.
-QA analizeaza produsul explorandui toate functionalitatile care dupa experienta sa au puncte mai slabe.
+Preconditii:
 
+Dispozitiv conectat la retea de alimentare/baterie
+Sistem de operare
+Conexiune la internet	
+Browser
 
-3.Boundary Values - pentru testare sunt luate doar valorile extreme din fiecare interval.
-Equivalence partitioning - pentru testare se ia doar o valoare din fiecare interval.
-0,1,2,3,4      5,6,7,8      9,10,11,12       
-Boundary=0,4  5,8  9,12 
-Equivalence= 2   6   11
+Mediul de testare: "utest.com" setat in limba Engleza
 
-4.Decision Table - pentru testare sunt analizate diverse combinatii de valori si conditii.
-Cand se face reducera la produs
-Weekend , Abonat, Black Friday ,etc.
+Pasii de reproducere:
 
-5.Pastrarea specificatiilor pe platformele online este importanta deoarece colegii pot vedea specificatiile dupa care QA a efectuat testarea si sa nu apara intrebari catre QA
-legate de bug-uri care nu lea gasit QA-ul.
+1.Porneste dispozitivul
+2.Conecteaza-te la reteaua de internet
+3.Deschide Browserul
+4.Tapeaza textul "utest.com"
+5.Apasa tasta "Enter"
+6.Localizeaza butonul "Become a uTester"
+7.Click butonul "Become a uTester"
 
-6.Test documentation - sunt toate documentele intr-o companie cu privire la modul de efectuare si organizare  a testarii de catre specialistii QA.
+Rezultatul astepat : Butonul "Become a uTester" este click-abil
 
-7.Avantajele Test Checklist
-- Usurinta in creare
-- Economisirea de timp
+Rezultatul actual :"Butonul "Become a uTester" nu este click-abil"
 
-8.Este
+Atasament : jpg.ipg
 
-9.Este
+Incercari de reproducere: 0
 
-10.Selenium IDE este foarte  de folos in cazul in care ai de executat acelas test de multe ori si cu valori diferite .El va efectua testele rapid si cu eficienta maxima.
+Severitatea: low
+
+Prioritatea: hight
