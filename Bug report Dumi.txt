@@ -1,0 +1,34 @@
+
+
+Descriere: Redirectionarea site-ului catre Facebook nu functioneaza
+ 
+Pre-conditii: 
+
+* Dispozitiv Desktop contectat la reteaua de alimentare sau baterii
+* SO
+* Conexiune la internet
+* Browser
+
+Mediu: www.utest.com setat in limba engleza 
+
+Pasii de reproducere: 
+1. Porneste dispozitivul
+2. Conecteaza-te la reteaua de internet
+3. Deschide browser-ul 
+4. Introdu textul "www.utest.com" in bara de cautare
+5. Apasa tasta "Enter"
+6. Fa scroll down pina la finalul paginii
+7. Localizeza pictograma "F" Facebook
+8. Da click pe ea
+
+Rezultatul asteptat: Redirectionarea site-ului catre Facebook functioneaza 
+Rezultatul actual: Redirectionarea site-ului catre Facebook nu functioneaza
+
+Incercari de reproducere: 0
+
+Prioritate: medie
+Severitate: medie
+
+
+
+
