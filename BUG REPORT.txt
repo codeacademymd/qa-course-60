@@ -1,0 +1,36 @@
+                                BUG REPORT
+
+Descriere: Utilizatorul nu se poate loga pe site
+
+Preconditii:
+
+-Dispozitiv Desktop conectat la reteau de alimentare sau la baterii
+-Sistem de operare
+-Conexiune la internet
+-Browser
+-Cont de utilizator
+
+Mediu: www.utest.com setat in limba engleza 
+
+Pasii de reproducere:
+1.Porneste dispozitivul
+2.Conecteaza-te la internet
+3.Deschide browserul
+4.Tapeaza textul www.utest.com in bara de cautare
+5.Apasa tasta Enter
+6.Localizeaza butonul "Log In"
+7.Da click pe butonul "Log In"
+8. Introdu in cimpul de text "Email adress" textul "mangeaiulian1989@gmail.com"
+9. Introdu in cimpul de text "Password" textul "abvcdel"
+10.Da click pe "Sign in"
+
+
+Rezultatul asteptat: Utilizatorul se poate loga pe site
+Rezultatul actual: Utilizatorul NU se poate loga pe site
+
+Atachment: img 
+
+Incercari de reproducere:0
+
+Severitate: Inalta
+Prioritate: Ridicata
