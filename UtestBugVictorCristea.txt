@@ -1,0 +1,53 @@
+Descriere: 
+Utilizatorul nu se poate loga pe platforma Utest
+
+Pre-conditii :
+
+-Dispozitiv Desktop, conectact la reteaua de alimentare
+
+-Sistem de Operare
+
+-Browser web
+
+-Conexiune la Internet
+
+
+Mediu de testare:
+“https://www.utest.com/”
+
+Pasii de reproducere :
+
+-Porneste dispozitivul
+
+-Conecteaza-te la reteau de internet
+
+-Deschide browserul
+
+-Tapeaza in bara de cautare “https://www.utest.com/“
+
+-Observa si verifica daca pagina principala de pe webisteul Utest a fost incarcata cu succes. 
+
+-Localizeaza pe pagina principala butonul “Log In“
+
+-Clik pe butonul “Log In”
+
+- Localizeaza inputul cu labelul “Email Address:“
+
+-Tapeaza emailul "test@example.com" in input
+
+-Localizeaza inputul cu labelul “Password” 
+
+-Tapeaza in inputul "password" parola "QAtest"
+
+-Localizeaza butonul "Sing In"
+
+-Da click pe butonul "Sing In"
+
+Rezultatul asteptat: 
+Utilizatorul se poate loga cu succes pe platofrma Utest
+
+Rezultatul actual : 
+Utilizatorul NU se poate loga cu succes pe platofrma Utest
+
+-Status:
+Failed
