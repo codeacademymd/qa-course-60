@@ -1,0 +1,47 @@
+Description: Page crushes when clicking ''Login Help'' 
+
+Pre-conditions:
+
+Browser
+
+Internet Connection
+
+PC Device
+
+Operational System
+
+Environment: https://www.utest.com/  set in English language
+
+Steps to reproduce:
+
+Turn on the device
+
+Connect to the internet
+
+Open browser
+
+In the search bar type text:  
+
+Press Enter key
+
+Scroll down till the very bottom page
+
+Locate ''Help & Support'' 
+
+Click on ''Help & Support'' 
+
+A new window will appear  
+
+Locate ''Login Help” on the right side
+
+Click ''Login Help”
+
+Expected Results: Page crushes when clicking ''Login Help'' 
+Actual Results: Page crushes when clicking ''Login Help'' 
+
+Attachments: PageCrushes.jpg
+
+Attempts to repeat: 0
+
+Severity: 2/5
+Priority: medium
