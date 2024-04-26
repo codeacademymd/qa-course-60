@@ -43,5 +43,5 @@ Attachments: PageCrushes.jpg
 
 Attempts to repeat: 0
 
-Severity: 2/5
-Priority: medium
+Severity: medium
+Priority: High

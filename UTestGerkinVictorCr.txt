@@ -1,0 +1,88 @@
+Description
+Feature: Smoke test Utest
+Scenario1.1: Verificare pagina de pornire(positive)
+Given: Utilizatorul acceseaza pagina principala https://www.utest.com/
+ When:Utilizatorul se afla pe pagina principala.
+Then: Pagina ar trebui să se încarce fără erori.
+ 
+Scenario1.2: Verificare pagina de pornire(negative)
+Given: Utilizatorul acceseaza pagina principala https://www.utest.com/
+ When: Utilizatorul introduce un URL invalid.
+Then: Utilizatorul ar trebui sa vadă un mesaj de eroare care indică faptul că pagina nu a putut fi găsită.
+ 
+Scenario2.1: Verificarea paginii "Why uTest" (positive)
+Given: Utilizatorul se afla pe pagina principala https://www.utest.com/
+When: Utilizatorul navigheaza catre optiunea "Why uTest"  din meniul din header.
+Then: Utilizatorul ar trebui sa navigheze cu succes pe pagina "Why uTest".
+ 
+Scenario2.2: Verificarea paginii "Why uTest"(negative)
+Given: Utilizatorul se afla pe pagina principala https://www.utest.com/
+When: Utilizatorul navigheaza catre optiunea "Why uTest"  din meniul din header.
+Then: Utilizatorul ar trebui sa vadă alta pagina infara de "Why uTest.
+ 
+Scenario3.1: Verificarea paginii "Projects"(positive)
+Given: Utilizatorul se afla pe pagina principala https://www.utest.com/
+When: Utilizatorul navigheaza catre optiunea "Projects"  din meniul din header.
+Then: Utilizatorul ar trebui sa navigheze cu succes pe pagina "Projects".
+ 
+Scenario3.2: Verificarea paginii "Projects" (negative)
+Given: Utilizatorul se afla pe pagina principala https://www.utest.com/
+When: Utilizatorul navigheaza catre optiunea "Projects"  din meniul din header.
+Then: Utilizatorul ar trebui sa vadă alta pagina infara de "Projects".
+ 
+Scenario4.1: Verificarea sistemului de logare (positive)
+Given: Utilizatorul se afla pe pagina principala https://www.utest.com/
+When: Utilizatorul navigheaza către optiunea "Log In" din meniul din header.
+Then: Utilizatorul ar trebui sa vada pagina "Log In".
+And: Utilizatorul completeaza inputul "Email Address" cu o adresa de email valida.
+And: Utilizatorul completeaza inputul "Password" cu o parola valida.
+Then: Utilizatorul ar trebui sa fie logat cu success in sistem
+
+Scenario4.2: Verificarea sistemului de logare(negative)
+Given: Utilizatorul se afla pe pagina principala https://www.utest.com/
+When: Utilizatorul navigheaza către optiunea de "Log In" din meniul din header.
+Then: Utilizatorul ar trebui sa vada pagina "Log In".
+And: Utilizatorul completeaza inputul "Email Address" cu o adresa de email nevalida.
+And: Utilizatorul completeaza inputul "Password" cu o parola nevalida.
+Then: Utilizatorul NU ar trebui sa fie logat cu success in sistem. 
+And : Utilizatorul ar trebui sa vada mesajul "invalid username or password"
+ 
+Scenario5.1: Verificarea procesului de inregistrare (positive)
+Given:  Utilizatorul se afla pe pagina principala https://www.utest.com/
+When: Utilizatorul navigheaza către optiunea "Join Today" din meniul din header.
+Then: Utilizatorul ar trebui sa vada pagina "Sign up".
+And: Utilizatorul completeaza inputul "First name"
+And: Utilizatorul completeaza inputul "last name"
+And: Utilizatorul completeaza inputul "Email address"
+And: Utilizatorul completeaza inputurile din labelul  "Date of Birth"
+And: Utilizatorul apasa inputul "Next Location"
+Then: Utilizatorul ar trebui sa vada pagina "Add your Address".
+And: Utilizatorul completeaza inputul "City"
+And: Utilizatorul completeaza inputul "Zip or Postal Code"
+And: Utilizatorul completeaza inputul "Country"
+Then: Utilizatorul ar trebui sa vada pagina "Tell us about your devices".
+And: Utilizatorul completeaza inputul "Your Computer:"
+And: Utilizatorul completeaza inputul "Version:"
+And: Utilizatorul completeaza inputul "Language:"
+
+And: Utilizatorul completeaza inputul "Your Mobile Device:"
+And: Utilizatorul completeaza inputul "Model:"
+And: Utilizatorul completeaza inputul "Operating System: "
+And: Utilizatorul apasa inputul "Next: Last Step"
+Then: Utilizatorul ar trebui sa vada pagina de configurare a parolei.
+And: Utilizatorul completeaza inputul "Password:"
+And: Utilizatorul completeaza inputul "Confirm Password: "
+And: Utilizatorul merge mai departe prin click pe inputul "Complete Setup"
+
+
+Scenario5.2: Verificarea procesului de inregistrare (negative)
+Given:  Utilizatorul se afla pe pagina principala https://www.utest.com/
+When: Utilizatorul navigheaza către optiunea "Join Today" din meniul din header.
+Then: Utilizatorul ar trebui sa vada pagina "Sign Up".
+And: Utilizatorul completeaza cu informatie nevalida inputul "First Name"
+And: Utilizatorul completeaza cu informatie nevalida inputul "Last Name"
+And: Utilizatorul completeaza cu informatie nevalida inputul "Email address"
+And: Utilizatorul completeaza cu informatie nevalida inputurile din labelul  "Date of Birth"
+And: Utilizatorul apasa inputul "Next Location"
+Then: Utilizatorul NU ar trebui sa aiba access la urmatorul pas de inregistrare
+And: utilzatorul NU se poate inregistra in sistem.
