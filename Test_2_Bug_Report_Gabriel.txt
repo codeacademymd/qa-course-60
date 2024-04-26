@@ -14,7 +14,7 @@ Pre-conditii :
 
 -Fara cont de utilizator 
 
--Cont de Utilizator deja inregistrat cu detalii asemanatoare (nume, prenume, data nastere, localitate)
+-Un alt cont de Utilizator deja inregistrat cu detalii asemanatoare (nume, prenume, data nastere, localitate)
 
 Mediu: “ utest.com ” setat in limba Engleza
 
